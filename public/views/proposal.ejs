@@ -1,0 +1,45 @@
+<html>
+<!--<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/ejs_production.js"></script>
+</head>-->
+
+<head>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/ejs_production.js"></script>
+    <title>Winnie The Pooh Shop</title>
+</head>
+
+<body class="aboutcontainer">
+	<nav class="header">
+		<a href="/"><img src="images/winnielogo.png" class="header-logo"></a>
+		<ul>
+			<li><a href="/about">About</a></li>
+			<li><a href="/shop">Shopping</a></li>
+			<li><a href="/proposal">Call Proposal</a></li>
+		</ul>
+	</nav>
+
+    <h1 id="main-title">Proposal</h1>
+    <div class="wrapper1">
+		<form>
+	<div id="usernew">
+		<%- include('form'); %>
+	</div>
+	<div id="userinfo">
+		<%- include('persons'); %>
+	</div>
+	<div id="userupdate"></div>
+	
+	<script src="js/script.js"></script>
+	</form>
+    </div>
+    <footer>
+        <img src="images/downimg.png" alt="footer-images" id="footer-image">
+        <p id="footer-text">Copyright @2015 Winnie the pooh shop. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

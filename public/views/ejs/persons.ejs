@@ -1,0 +1,16 @@
+<h1>User Stored</h1>
+<% if (userinfos.length) { %>
+  <ul>
+    <% userinfos.forEach(function(userinfo){ %>
+      <li>
+        <div class='name'>
+          <%= userinfo['firstname'] %>
+            <%= userinfo['lastname'] %>
+        </div>
+        <a href="" class="read" rel=<%=u serinfo[ '_id']%>>VIEW</a>
+        <a href="" class="delete" rel=<%=u serinfo[ '_id']%>>DEL</a>
+        <a href="" class="update" rel=<%=u serinfo[ '_id']%>>EDIT</a>
+      </li>
+      <% }) %>
+  </ul>
+  <% } %>
